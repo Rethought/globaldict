@@ -37,10 +37,29 @@ Telephone numbers
 -----------------
 
 The output data contains IDCs and for countries/territories in the North
-American Numbering Plan Area we include the area code in the field
+American Numbering Plan (NAMP) area we include the area code in the field
 'Region X' where X is A through D on account of some territories sharing
 and IDC with others and having a limited set of area codes that, together
 with the IDC, identify the country.
+
+An example entry from the JSON dump::
+
+    ...
+    "PRI": {
+        "iso3": "PRI", 
+        "iso2": "PR", 
+        "name": "PUERTO RICO", 
+        "region_a": "787", 
+        "region_b": "939", 
+        "number": "630", 
+        "idc": "1"
+    },
+    ...
+
+
+Puerto Rico is part of the NAMP and has two regions, thus all Puerto
+Rican numbers start either +1 787 or +1 939. 'number' is the ISO country
+number and not a dialing code.
 
 Completeness and beauty
 -----------------------
