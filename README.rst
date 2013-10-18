@@ -22,7 +22,7 @@ Formal name
 ISO 316-1 2 letter country code
 ISO 316-1 3 letter country code
 ISO 316-1 number
-ITU-T international dialing code
+ITU-T international dialing code (IDC)
 ITU-T area code (e.g. for countries in North American Numbering system where
 one dials +1 xxx, we term xxx the area code)
 
@@ -57,11 +57,11 @@ Data sources
 
 * http://unstats.un.org/unsd/methods/m49/m49alpha.htm
 * http://www.worldatlas.com/aatlas/ctycodes.htm 
-  * some of the country numbers disagree with the UN site so we consider the UN site to be more authoritative
+  ** some of the country numbers disagree with the UN site so we consider the UN site to be more authoritative
 * https://en.wikipedia.org/wiki/List_of_country_calling_codes
 
 * http://www.famfamfam.com/lab/icons/flags/
-  * flags of the world
+  ** flags of the world
 
 We believe it to be acceptable to draw on these sources but would invite
 site owners to contact one of the contributors in the event that this has been
@@ -89,6 +89,16 @@ To see some logging, you can make this verbose::
 To ignore all entities for which we've not ascertained an IDC::
 
   $ python build.py -i
+
+Snapshots
+=========
+
+For convenience, an occasionally updated snapshot will be placed in the
+`snapshot` directory. Two files are present, named in the form
+`idc_DDMMYY.[csv|json]`
+
+Both are created with the `-i` option thus only including entries for which
+an IDC is found.
 
 A note on politics
 ==================
