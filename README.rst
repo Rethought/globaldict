@@ -24,7 +24,7 @@ ISO 316-1 3 letter country code
 ISO 316-1 number
 ITU-T international dialing code
 ITU-T area code (e.g. for countries in North American Numbering system where
-                 one dials +1 xxx, we term xxx the area code)
+one dials +1 xxx, we term xxx the area code)
 
 Local changes
 -------------
@@ -57,8 +57,7 @@ Data sources
 
 * http://unstats.un.org/unsd/methods/m49/m49alpha.htm
 * http://www.worldatlas.com/aatlas/ctycodes.htm 
-  * some of the country numbers disagree with the UN site so we consider
-    the UN site to be more authoritative
+  * some of the country numbers disagree with the UN site so we consider the UN site to be more authoritative
 * https://en.wikipedia.org/wiki/List_of_country_calling_codes
 
 * http://www.famfamfam.com/lab/icons/flags/
