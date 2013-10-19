@@ -245,9 +245,13 @@ def blend_un_wad(und, wad):
             # just in case ISO3 differs at the UN, check with the ISO number
             try:
                 undata = isonum[data['number']]
+                oldiso3 = iso3
                 iso3 = undata['iso3']
                 data['iso3'] = iso3
                 data['name'] = undata['name'].upper()
+                newdata[iso3] = data
+                del(newdata[oldiso3])
+                
                 PATCHED = True
             except KeyError:
                 # OK - there really is no UN entry for this country
